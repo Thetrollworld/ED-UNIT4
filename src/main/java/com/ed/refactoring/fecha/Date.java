@@ -18,10 +18,10 @@ public class Date {
     private int year;
     
  /**
-  * 
-  * @param day
-  * @param month
-  * @param year 
+  * This is the constructor we will use for creating dates
+  * @param day // shows us the day we're on.
+  * @param month // show us the month we're on.
+  * @param year // show us the year we're on.
   */
 
     public Date(int day, int month, int year) {
@@ -33,7 +33,10 @@ public class Date {
         this.year = year;
 
     }
-
+/**
+ * This method validates if the day or month is within the limits
+ * @return //returns if we have or haven't inserted a valid date
+ */
     public boolean validation() {
 
         if (day < 1 || day > 31) {
